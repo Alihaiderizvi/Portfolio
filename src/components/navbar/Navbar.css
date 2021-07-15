@@ -1,0 +1,49 @@
+.navbar {
+	background-color: transparent;
+	font-family: "Uchen", serif;
+}
+.navbar__Wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 90%;
+	margin: auto;
+}
+
+.Logo {
+	margin-bottom: 0;
+	font-size: 2rem;
+	letter-spacing: 3px;
+}
+
+.Navbar__ul {
+	list-style: none;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 0;
+	position: absolute;
+	top: 3.9rem;
+	left: 0;
+	right: 4rem;
+}
+
+.Navbar__Link {
+	width: 5%;
+	padding: 0 4rem 0 2rem;
+	text-align: left;
+	background: #fff;
+}
+
+.Navbar__Link:first-child {
+	padding-top: 0.5rem;
+}
+
+.Navbar__Link:active {
+	color: red;
+}
