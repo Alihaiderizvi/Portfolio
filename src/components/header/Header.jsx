@@ -7,6 +7,7 @@ import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import "./Header.css";
 // Import: images
 import background1 from "../../assets/bg1.png";
+
 const Header = () => {
 	return (
 		<div className='Header'>
