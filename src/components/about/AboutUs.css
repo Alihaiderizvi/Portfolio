@@ -4,6 +4,7 @@
 	margin: auto;
 	padding-top: 2rem;
 	font-family: "Raleway", sans-serif;
+	overflow: hidden;
 }
 
 .AboutUs::before {
@@ -59,21 +60,41 @@
 /* About Us Section */
 .AboutUs__section {
 	display: flex;
-	align-items: center;
+	margin: 2em 0 0 0;
 }
 /* About Us Section Left Div */
 .AboutUs__leftDiv {
-	width: 50%;
+	/* width: 50%; */
 }
 
+.AboutUs__sectionBtn {
+	text-align: center;
+}
+.AboutUs__sectionBtn > button {
+	text-align: center;
+	background: #fff;
+	color: #d5c455;
+	border: none;
+	padding: 1rem 3rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.AboutUs__sectionBtn > button:hover {
+	background: #433c18f0;
+	color: #fff;
+	font-weight: 700;
+	cursor: pointer;
+}
 .AboutUsLeftDiv__Content {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
 .card {
-	height: 150px;
-	min-width: 150px;
+	height: 180px;
+	min-width: 210px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -93,6 +114,42 @@
 	letter-spacing: 2px;
 }
 /* About Us Section Right Div */
+
 .AboutUs__RightDiv {
-	width: 50;
+	width: 50%;
+	margin: 2rem 0;
+}
+
+.AboutUsRightDiv__Content > h3 {
+	margin: 0;
+}
+.AboutUsRightDivContent__Child {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.AboutUsRightDivContent__LeftChild {
+	margin-right: 2rem;
+}
+
+.AboutUsRightDivContent__LeftChild > ul {
+	background: #fff;
+	border: 2px solid #d5c455;
+	list-style: none;
+	padding: 1rem;
+}
+
+.AboutUsRightDivContent__LeftChild > ul > li {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: #d5c455;
+	line-height: 2;
+}
+
+.AboutUsRightDivContent__LeftChild > ul > li > span {
+	width: 7rem;
+	font-weight: 600;
+	color: #000000;
 }
