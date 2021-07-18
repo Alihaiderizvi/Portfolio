@@ -66,6 +66,16 @@
 
 /* Media Quries */
 
+@media screen and (max-width: 816px) {
+	.skillsSection {
+		height: auto;
+	}
+	.skillSrction__Wrapper {
+		transform: unset;
+		margin: 4rem 0px;
+	}
+}
+
 @media screen and (max-width: 680px) {
 	.skillSection__bar {
 		width: 100%;
