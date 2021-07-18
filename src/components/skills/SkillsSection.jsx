@@ -8,7 +8,7 @@ import { LinearProgress, withStyles } from "@material-ui/core";
 
 const BorderLinearProgress = withStyles((theme) => ({
 	root: {
-		height: 10,
+		height: 8,
 		borderRadius: 5,
 	},
 	colorPrimary: {
@@ -45,8 +45,8 @@ const SkillsSection = () => {
 					{skills.map((data, index) => (
 						<div className='skillSection__bar' key={index}>
 							<div className='skillSectionBar__headings'>
-								<h5 style={{ textTransform: "uppercase" }}>{data.skill}</h5>
-								<h5>{data.percentage}</h5>
+								<h5>{data.skill}</h5>
+								<h5>{data.percentage}%</h5>
 							</div>
 							<BorderLinearProgress
 								variant='determinate'

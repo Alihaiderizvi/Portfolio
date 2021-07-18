@@ -10,9 +10,10 @@
 }
 .skillSection__Heading {
 	text-align: center;
+
+	padding-bottom: 3rem;
 }
 .skillSection__bars {
-	padding: 5rem 2rem;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -26,11 +27,47 @@
 .skillSectionBar__headings {
 	display: flex;
 	justify-content: space-between;
-	width: 95%;
-	margin: auto;
 	margin-bottom: 0.5rem;
+}
+
+.skillSectionBar__headings > h5:first-child {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.skillSectionBar__headings > h5:nth-child(2) {
+	font-size: 16px;
+	font-weight: 500;
+	color: #d5c455;
+}
+
+.skillSection__SubHeading {
+	font-size: 13px;
+	display: block;
+	margin-bottom: 5px;
+	color: #d5c455;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.skillSection__MainHeading {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin: 0;
 }
 
 .skillSectionBar__headings > h5 {
 	margin: 0;
+}
+
+/* Media Quries */
+
+@media screen and (max-width: 680px) {
+	.skillSection__bar {
+		width: 100%;
+	}
 }
