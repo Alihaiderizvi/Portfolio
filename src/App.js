@@ -1,4 +1,5 @@
 import AboutUs from "./components/about/AboutUs";
+import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
 import Header from "./components/header/Header";
 import Services from "./components/services/Services";
@@ -13,6 +14,7 @@ function App() {
 			<SkillsSection />
 			<Services />
 			<Experience />
+			<Contact />
 		</div>
 	);
 }

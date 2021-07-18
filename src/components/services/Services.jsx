@@ -2,11 +2,8 @@
 import React from "react";
 // Imports: Material Ui Icons
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-import LanguageIcon from "@material-ui/icons/Language";
 // Import: Internal CSS
 import "./Services.css";
-// Import: images
-import icon1 from "../../assets/webProgrammingIcon.png";
 
 const data = [
 	{
@@ -55,7 +52,7 @@ const Services = () => {
 			<div className='services__section'>
 				{data.map((d, index) => (
 					<div className='service' key={index}>
-						<i class={d.iconClass}></i>
+						<i className={d.iconClass}></i>
 						<h2>{d.title}</h2>
 						<div className='Service__text'>
 							<p>{d.description}</p>
