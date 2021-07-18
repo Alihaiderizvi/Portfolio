@@ -9,6 +9,7 @@
 }
 .Services__breadcrumbs {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2rem;
 }
@@ -109,6 +110,12 @@
 } */
 
 /* Media Quries */
+
+@media screen and (max-width: 1216px) {
+	.services {
+		height: auto;
+	}
+}
 
 @media screen and (max-width: 816px) {
 	.services {

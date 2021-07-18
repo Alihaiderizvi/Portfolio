@@ -2,4 +2,56 @@
 	width: 90%;
 	margin: auto;
 	padding: 3rem 0;
+	font-family: "Poppins", sans-serif;
+}
+
+.experience__child {
+	background: #fff;
+	padding: 30px !important;
+	margin: 1rem 0rem 2rem 0 !important;
+}
+
+.experience__icon {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #d5c455;
+	position: relative;
+	margin-top: -60px;
+	margin-bottom: 20px;
+}
+
+.experience__icon > i {
+	position: absolute;
+	font-size: 40px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.experience__child > h4 {
+	font-weight: 600;
+	color: #d5c455;
+}
+
+.experience__locationIcon {
+	display: flex;
+	align-items: center;
+}
+
+.experience__locationIcon > i {
+	color: #d5c455;
+	margin-right: 0.5rem;
+}
+
+.experience__locationIcon > p {
+	margin: 0;
+}
+
+.experience__child > p {
+	font-weight: 400;
+	color: #999999;
 }
