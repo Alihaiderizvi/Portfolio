@@ -10,3 +10,8 @@ body {
 	font-family: "Raleway", sans-serif;
 	font-family: "Uchen", serif;
 }
+
+p.select__color::selection {
+	color: #fff;
+	background: #d5c455;
+}

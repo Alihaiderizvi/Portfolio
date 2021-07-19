@@ -4,11 +4,11 @@ import GoogleMapReact from "google-map-react";
 const AnyReactComponent = ({ text }) => (
 	<div
 		style={{
-			color: "white",
+			color: "rgb(233 207 26)",
 			background: "grey",
-			padding: "15px 10px",
 			display: "inline-flex",
 			textAlign: "center",
+			fontSize: "20px",
 			alignItems: "center",
 			justifyContent: "center",
 			borderRadius: "100%",
@@ -33,7 +33,7 @@ const Map = () => {
 			<AnyReactComponent
 				lat={24.9483619}
 				lng={67.0808384}
-				text={"Current Location"}
+				text={<i class='fas fa-map-marker-alt'></i>}
 			/>
 		</GoogleMapReact>
 	);

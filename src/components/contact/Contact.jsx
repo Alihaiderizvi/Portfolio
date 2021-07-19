@@ -4,8 +4,10 @@ import React from "react";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // Import: Internal CSS
 import "./Contact.css";
+// Import : Google Map
 import Map from "../googleMap/Map";
-
+// Import Form Component
+import ConForm from "./ConForm";
 const Contact = () => {
 	return (
 		<div className='contact'>
@@ -34,9 +36,14 @@ const Contact = () => {
 				</div>
 				<h1>Contact Us </h1>
 			</div>
-			<div style={{ width: "100%", height: "400px" }}>
-				<Map />
-			</div>
+			<section className='Contact__Section'>
+				<div className='Contact__form'>
+					<ConForm />
+				</div>
+				<div className='ContactForm__map'>
+					<Map />
+				</div>
+			</section>
 		</div>
 	);
 };

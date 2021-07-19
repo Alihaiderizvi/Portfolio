@@ -1,0 +1,115 @@
+.contact {
+	width: 80%;
+	margin: 0 auto 4rem auto;
+	font-family: "Poppins", Arial, sans-serif;
+}
+
+.Contact__Section {
+	display: flex;
+	align-items: center;
+	background: #fff;
+}
+
+/* Contact Form */
+.Contact__form {
+	width: 50%;
+	background: #fff;
+}
+.contactForm__Wrap {
+	padding: 3rem;
+}
+
+.contactForm__Wrap > h3 {
+	color: #000000;
+	font-weight: 700;
+	font-size: 30px;
+	margin: 0;
+}
+
+.contactForm__Wrap > p {
+	color: #00000094;
+	margin: 0;
+	margin-bottom: 1.5rem;
+}
+
+.contactForm__Child {
+	display: flex;
+	margin-bottom: 1.5rem;
+}
+
+.form__text {
+	width: 100%;
+}
+
+.form__text > h4 {
+	color: #000000;
+	display: block;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.form__text > p {
+	margin: 0;
+	word-break: break-word;
+	color: #00000094;
+	font-size: 13px;
+}
+
+.MuiInputBase-formControl {
+	color: rgba(0, 0, 0, 0.8) !important;
+	font-size: 14px !important;
+	margin-bottom: 0.5rem !important;
+}
+
+.MuiInputBase-input:nth-child(4) {
+	height: 75px;
+	position: relative;
+	bottom: 30px;
+}
+
+.submit__btn {
+	background: #d5c455 !important;
+	color: #fff !important;
+	padding: 0.5rem 2rem !important;
+	font-size: 12px !important;
+	font-weight: 700 !important;
+	border-radius: 0 !important;
+	text-transform: uppercase !important;
+}
+
+.socialMedia {
+	margin-top: 3rem;
+}
+
+.socialMedia > h3 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.socialMedia__links {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+.socialMedia__link {
+	color: black;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.socialMedia__link > img {
+	margin-right: 5px;
+}
+/* Contact Form Map */
+
+.ContactForm__map {
+	width: 50%;
+	height: 40rem;
+}
+/* Media Quries */
+/* Contact Form Break Points */
+/* Contact Form Map Break Points*/
