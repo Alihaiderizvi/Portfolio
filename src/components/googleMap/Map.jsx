@@ -21,7 +21,7 @@ const AnyReactComponent = ({ text }) => (
 
 const defaultProps = {
 	center: { lat: 24.9483619, lng: 67.0808384 },
-	zoom: 11,
+	zoom: 15,
 };
 
 const Map = () => {

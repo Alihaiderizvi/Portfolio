@@ -2,12 +2,11 @@
 	height: 100vh;
 	width: 90%;
 	margin: auto;
-	padding-top: 2rem;
-	font-family: "Raleway", sans-serif;
+	font-family: "Poppins", sans-serif;
 	overflow: hidden;
 }
 
-.AboutUs::before {
+/* .AboutUs::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -16,13 +15,13 @@
 	clip-path: polygon(0 0, 0% 100%, 100% 100%);
 	height: 100vh;
 	background-color: #d5c455;
-}
+} */
 
 .AboutUs__breadcrumbs {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 .AboutUs__breadcrumbs > p {
@@ -64,7 +63,7 @@
 }
 /* About Us Section Left Div */
 .AboutUs__leftDiv {
-	/* width: 50%; */
+	width: 50%;
 }
 
 .AboutUs__sectionBtn {
@@ -75,16 +74,18 @@
 	background: #fff;
 	color: #d5c455;
 	border: none;
+	margin-top: 1rem;
 	padding: 1rem 3rem;
 	font-weight: 700;
 	cursor: pointer;
 }
 
 .AboutUs__sectionBtn > button:hover {
-	background: #433c18f0;
+	background: #d5c455;
 	color: #fff;
 	font-weight: 700;
 	cursor: pointer;
+	transition: 0.8s;
 }
 .AboutUsLeftDiv__Content {
 	display: flex;
@@ -93,8 +94,8 @@
 }
 
 .card {
-	height: 180px;
-	min-width: 210px;
+	height: 13rem;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -104,7 +105,13 @@
 	padding: 0 2rem;
 	margin: 2rem 1rem 1rem 0;
 }
-
+.card:hover {
+	background: #d5c455;
+	color: #fff;
+}
+.card > h2:hover {
+	color: #fff;
+}
 .card > h2 {
 	font-size: 35px;
 	font-weight: bold;
@@ -122,6 +129,24 @@
 
 .AboutUsRightDiv__Content > h3 {
 	margin: 0;
+	font-size: 14px;
+	display: block;
+	margin-bottom: 5px;
+	color: #d5c455;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.AboutUsRightDiv__Content > h2 {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.AboutUsRightDiv__Content > p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	color: #999999;
 }
 .AboutUsRightDivContent__Child {
 	display: flex;
@@ -133,10 +158,8 @@
 }
 
 .AboutUsRightDivContent__LeftChild > ul {
-	background: #fff;
-	border: 2px solid #d5c455;
 	list-style: none;
-	padding: 1rem;
+	padding: 0.8rem 0;
 }
 
 .AboutUsRightDivContent__LeftChild > ul > li {
@@ -145,11 +168,37 @@
 	font-size: 14px;
 	font-weight: 600;
 	color: #d5c455;
-	line-height: 2;
+	line-height: 1;
+	margin-bottom: 10px;
 }
 
 .AboutUsRightDivContent__LeftChild > ul > li > span {
-	width: 7rem;
 	font-weight: 600;
 	color: #000000;
+	width: 110px;
+}
+
+/* Media Quries */
+
+@media screen and (max-width: 900px) {
+	.AboutUs {
+		height: auto;
+	}
+	.AboutUs__section {
+		display: block;
+	}
+	.AboutUs__leftDiv {
+		width: 100%;
+	}
+	.card {
+		width: 60%;
+		height: 10rem;
+	}
+	.AboutUs__RightDiv {
+		width: 100%;
+	}
+	.AboutUsRightDivContent__LeftChild > ul {
+		background: transparent;
+		border: none;
+	}
 }

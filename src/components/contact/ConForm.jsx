@@ -83,19 +83,31 @@ const ConForm = () => {
 				<div className='socialMedia'>
 					<h3>Follow me here</h3>
 					<p className='socialMedia__links'>
-						<a className='socialMedia__link' href='/'>
+						<a
+							className='socialMedia__link'
+							href='https://www.linkedin.com/in/syedalihaiderrizvi/'
+						>
 							<img src={LinkedIn} alt='Linkedin Icon' />
 							LinkedIn
 						</a>
-						<a className='socialMedia__link' href='/'>
+						<a
+							className='socialMedia__link'
+							href='https://github.com/Alihaiderizvi'
+						>
 							<img src={github} alt='github Icon' />
 							GitHub
 						</a>
-						<a className='socialMedia__link' href='/'>
+						<a
+							className='socialMedia__link'
+							href='https://www.facebook.com/raza152009/'
+						>
 							<img src={facebook} alt='facebook Icon' />
 							Facebook
 						</a>
-						<a className='socialMedia__link' href='/'>
+						<a
+							className='socialMedia__link'
+							href='https://www.instagram.com/ahaider60/'
+						>
 							<img src={instagram} alt='instagram Icon' />
 							Instagram
 						</a>

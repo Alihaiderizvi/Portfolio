@@ -9,14 +9,28 @@ import "./Navbar.css";
 
 const Navbar = () => {
 	const [showul, setShowul] = useState(false);
+	const [navbarBg, setNavbarBg] = useState(false);
 
+	const changeNavBg = () => {
+		if (window.scrollY >= 750) {
+			setNavbarBg(true);
+		} else {
+			setNavbarBg(false);
+		}
+	};
+
+	window.addEventListener("scroll", changeNavBg);
 	const handleClick = () => {
 		setShowul(!showul);
 	};
 
 	return (
 		<div className='navbar'>
-			<div className='navbar__Wrapper'>
+			<div
+				className={
+					navbarBg ? "navbar__Wrapper navbar__active" : "navbar__Wrapper"
+				}
+			>
 				<h2 className='Logo'>Ali Haider</h2>
 				<IconButton onClick={handleClick} style={{ color: "black" }}>
 					<MenuIcon />
