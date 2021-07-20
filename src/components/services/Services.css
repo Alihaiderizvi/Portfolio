@@ -66,8 +66,6 @@
 	margin-top: 2rem;
 	background: #fff;
 	font-weight: 500;
-	transform: scale(1, 1);
-	transition: transform 0.5s ease;
 }
 
 .service > i {
@@ -93,7 +91,7 @@
 /* Service On Hover */
 
 .service:hover {
-	transform: scale(1.02, 1.08);
+	transition: 0.6s;
 }
 .Service__text:hover {
 	color: #d5c455;
