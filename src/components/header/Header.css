@@ -100,9 +100,22 @@
 	width: 100%;
 }
 
+/* Scroll To Top */
+.scrollToTop {
+	position: fixed;
+	right: 0;
+	margin-right: 1rem;
+	background: #d5c455;
+	bottom: 10px;
+	border-radius: 10%;
+	color: #fff;
+}
+.scrollToTop > button {
+	color: #fff !important;
+}
 /* Media Quries */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 500px) {
 	.Header {
 		height: auto;
 	}

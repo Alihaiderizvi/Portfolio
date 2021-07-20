@@ -4,6 +4,8 @@ import React from "react";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // Import: Internal CSS
 import "./Services.css";
+// Import: React Sroll
+import { Link } from "react-scroll";
 
 const data = [
 	{
@@ -27,19 +29,25 @@ const data = [
 ];
 const Services = () => {
 	return (
-		<div className='services'>
+		<div className='services' id='service'>
 			<div className='services__heading'>
 				<div className='Services__breadcrumbs'>
 					<p>
-						<a href='/'>Home</a>
+						<Link to='header' smooth={true} duration={1000}>
+							Home
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						<a href='/'>AboutUs</a>
+						<Link to='AboutUs' smooth={true} duration={1000}>
+							AboutUs
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						<a href='/'>Skills</a>
+						<Link to='skillSection' smooth={true} duration={1000}>
+							Skills
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>

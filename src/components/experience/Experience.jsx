@@ -6,25 +6,36 @@ import Grid from "@material-ui/core/Grid";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // Imports: Internal Css
 import "./Experience.css";
+// Import: React Sroll
+import { Link } from "react-scroll";
+
 const Experience = () => {
 	return (
-		<div className='experience'>
+		<div className='experience' id='Experience'>
 			<div className='services__heading'>
 				<div className='Services__breadcrumbs'>
 					<p>
-						<a href='/'>Home</a>
+						<Link to='header' smooth={true} duration={1000}>
+							Home
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						<a href='/'>AboutUs</a>
+						<Link to='AboutUs' smooth={true} duration={1000}>
+							AboutUs
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						<a href='/'>Skills</a>
+						<Link to='skillSection' smooth={true} duration={1000}>
+							Skills
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						<a href='/'>Services</a>
+						<Link to='skillSection' smooth={true} duration={1000}>
+							Services
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>

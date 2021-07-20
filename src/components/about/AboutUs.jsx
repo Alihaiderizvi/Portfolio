@@ -4,15 +4,22 @@ import React from "react";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // Import: Internal CSS
 import "./AboutUs.css";
-// Import: images
-
+// Import: file
+import Cv from "../../assets/CV.pdf";
+// Import: React Sroll
+import { Link } from "react-scroll";
+const downloadFile = () => {
+	window.location.href = "https://docdro.id/tJ1wI2n";
+};
 const AboutUs = () => {
 	return (
-		<div className='AboutUs'>
+		<div className='AboutUs' id='AboutUs'>
 			<div className='AboutUs__heading'>
 				<div className='AboutUs__breadcrumbs'>
 					<p>
-						<a href='/'>Home</a>
+						<Link to='header' smooth={true} duration={1000}>
+							Home
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
@@ -92,7 +99,7 @@ const AboutUs = () => {
 				</div>
 			</section>
 			<div className='AboutUs__sectionBtn'>
-				<button>Download CV</button>
+				<button onClick={downloadFile}>Download CV</button>
 			</div>
 		</div>
 	);

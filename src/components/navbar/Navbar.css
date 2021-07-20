@@ -45,12 +45,9 @@
 	padding: 0 4rem 0 2rem;
 	text-align: left;
 	background: #fff;
+	cursor: pointer;
 }
 
 .Navbar__Link:first-child {
 	padding-top: 0.5rem;
-}
-
-.Navbar__Link:active {
-	color: red;
 }

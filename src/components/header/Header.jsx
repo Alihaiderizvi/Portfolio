@@ -3,14 +3,19 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 // Imports: Material Ui Icons
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+// Imports: Material Ui Core
+import { IconButton } from "@material-ui/core";
 // Import: Internal CSS
 import "./Header.css";
 // Import: images
 import background1 from "../../assets/bg1.png";
+// Import: React Sroll
+import { Link } from "react-scroll";
 
 const Header = () => {
 	return (
-		<div className='Header'>
+		<div className='Header' id='header'>
 			<div className='overlay'></div>
 			<Navbar />
 			<div className='header__Wrapper'>
@@ -24,10 +29,14 @@ const Header = () => {
 						</h1>
 						<div className='headerLeftDiv__btns'>
 							<p className=''>
-								<a href='/'>More About Me</a>
+								<Link to='AboutUs' smooth={true} duration={1000}>
+									More About Me
+								</Link>
 								<ArrowRightAltIcon />
 							</p>
-							<a href='/'>Hire Me</a>
+							<Link to='contact' smooth={true} duration={1000}>
+								Hire Me
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -36,6 +45,13 @@ const Header = () => {
 						<img src={background1} alt='bg' />
 					</div>
 				</div>
+			</div>
+			<div className='scrollToTop'>
+				<Link to='header' smooth={true} duration={1000}>
+					<IconButton style={{ color: "#fff" }}>
+						<ArrowUpwardIcon />
+					</IconButton>
+				</Link>
 			</div>
 		</div>
 	);

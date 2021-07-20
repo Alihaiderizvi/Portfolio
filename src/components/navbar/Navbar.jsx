@@ -6,6 +6,8 @@ import { IconButton } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 // Imports: Internal Css
 import "./Navbar.css";
+// Import: React Sroll
+import { Link } from "react-scroll";
 
 const Navbar = () => {
 	const [showul, setShowul] = useState(false);
@@ -39,11 +41,36 @@ const Navbar = () => {
 			{showul ? (
 				<div className='Navbar__Links'>
 					<ul className='Navbar__ul'>
-						<li className='Navbar__Link'>Home</li>
-						<li className='Navbar__Link'>About</li>
-						<li className='Navbar__Link'>Projects</li>
-						<li className='Navbar__Link'>Experience</li>
-						<li className='Navbar__Link'>Contact</li>
+						<li className='Navbar__Link'>
+							<Link smooth={true} duration={1000} to='header'>
+								Home
+							</Link>
+						</li>
+						<li className='Navbar__Link'>
+							<Link smooth={true} duration={1000} to='AboutUs'>
+								About
+							</Link>
+						</li>
+						<li className='Navbar__Link'>
+							<Link smooth={true} duration={1000} to='skillSection'>
+								Skills
+							</Link>
+						</li>
+						<li className='Navbar__Link'>
+							<Link smooth={true} duration={1000} to='Experience'>
+								Experience
+							</Link>
+						</li>
+						<li className='Navbar__Link'>
+							<Link smooth={true} duration={1000} to='service'>
+								Service
+							</Link>
+						</li>
+						<li className='Navbar__Link'>
+							<Link smooth={true} duration={1000} to='contact'>
+								Contact
+							</Link>
+						</li>
 					</ul>
 				</div>
 			) : (

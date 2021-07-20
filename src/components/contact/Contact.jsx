@@ -8,25 +8,42 @@ import "./Contact.css";
 import Map from "../googleMap/Map";
 // Import Form Component
 import ConForm from "./ConForm";
+// Import: React Sroll
+import { Link } from "react-scroll";
+
 const Contact = () => {
 	return (
-		<div className='contact'>
+		<div className='contact' id='contact'>
 			<div className='services__heading'>
 				<div className='Services__breadcrumbs'>
 					<p>
-						<a href='/'>Home</a>
+						<Link to='header' smooth={true} duration={1000}>
+							Home
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						<a href='/'>AboutUs</a>
+						<Link to='AboutUs' smooth={true} duration={1000}>
+							AboutUs
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						<a href='/'>Skills</a>
+						<Link to='skillSection' smooth={true} duration={1000}>
+							Skills
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						<a href='/'>Services</a>
+						<Link to='skillSection' smooth={true} duration={1000}>
+							Services
+						</Link>
+						<KeyboardArrowRightIcon />
+					</p>
+					<p>
+						<Link to='Experience' smooth={true} duration={1000}>
+							Experience
+						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
