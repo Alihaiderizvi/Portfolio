@@ -27,7 +27,7 @@
 	letter-spacing: 3px;
 }
 
-.Navbar__ul {
+/* .Navbar__ul {
 	list-style: none;
 	padding: 0 0.5rem;
 	display: flex;
@@ -38,16 +38,31 @@
 	top: 3.9rem;
 	left: 0;
 	right: 4rem;
-}
+} */
 
+/* .Navbar__ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+} */
+.Navbar__ul {
+	padding: 0;
+	/* list-style: none;
+	display: flex;
+	flex-direction: column; */
+}
 .Navbar__Link {
-	width: 5%;
-	padding: 0 4rem 0 2rem;
+	padding: 0.3rem 2rem;
 	text-align: left;
 	background: #fff;
 	cursor: pointer;
 }
 
+.Navbar__link:hover {
+	background: #d5c455 !important;
+	color: #fff !important;
+	font-weight: 500;
+}
 .Navbar__Link:first-child {
 	padding-top: 0.5rem;
 }

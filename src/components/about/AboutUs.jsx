@@ -4,8 +4,6 @@ import React from "react";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // Import: Internal CSS
 import "./AboutUs.css";
-// Import: file
-import Cv from "../../assets/CV.pdf";
 // Import: React Sroll
 import { Link } from "react-scroll";
 const downloadFile = () => {
@@ -53,10 +51,10 @@ const AboutUs = () => {
 				<div className='AboutUs__RightDiv'>
 					<div className='AboutUsRightDiv__Content'>
 						<h3>About Me</h3>
-						<h2>A UI/UX Designer & Web Developer Based in Philippines</h2>
+						<h2>A Fresh Grad Junior React Js Developer.</h2>
 						<p>
 							Far far away, behind the word mountains, far from the countries
-							Vokalia and Consonantia, there live the blind texts.
+							lorem and lorem, there live the blind texts.
 						</p>
 						<div className='AboutUsRightDivContent__Child'>
 							<div className='AboutUsRightDivContent__LeftChild'>

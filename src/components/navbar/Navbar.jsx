@@ -9,7 +9,55 @@ import "./Navbar.css";
 // Import: React Sroll
 import { Link } from "react-scroll";
 
+// Material icons
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import PersonIcon from "@material-ui/icons/Person";
+import FormatListBulletedRoundedIcon from "@material-ui/icons/FormatListBulletedRounded";
+import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded";
+import InboxIcon from "@material-ui/icons/MoveToInbox";
+
+// Material Ui Core
+import { ListItemIcon } from "@material-ui/core";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+
+// Material Ui Style
+import { withStyles } from "@material-ui/styles";
+
+const StyledMenu = withStyles({
+	paper: {
+		border: "1px solid #d3d4d5",
+	},
+})((props) => (
+	<Menu
+		elevation={0}
+		getContentAnchorEl={null}
+		anchorOrigin={{
+			vertical: "bottom",
+			horizontal: "center",
+		}}
+		transformOrigin={{
+			vertical: "top",
+			horizontal: "center",
+		}}
+		{...props}
+	/>
+));
+
+const StyledMenuItem = MenuItem;
+
 const Navbar = () => {
+	// Menu
+	const [anchorEl, setAnchorEl] = useState(null);
+	const handleClick = (event) => {
+		setAnchorEl(event.currentTarget);
+	};
+
+	const handleClose = () => {
+		setAnchorEl(null);
+	};
+
+	// Navbar
 	const [showul, setShowul] = useState(false);
 	const [navbarBg, setNavbarBg] = useState(false);
 
@@ -22,21 +70,63 @@ const Navbar = () => {
 	};
 
 	window.addEventListener("scroll", changeNavBg);
-	const handleClick = () => {
-		setShowul(!showul);
-	};
+	// const handleClickNavbar = () => {
+	// 	setShowul(!showul);
+	// };
 
 	return (
-		<div className='navbar'>
+		<div className='navbar' id='navbar'>
 			<div
 				className={
 					navbarBg ? "navbar__Wrapper navbar__active" : "navbar__Wrapper"
 				}
 			>
 				<h2 className='Logo'>Ali Haider</h2>
-				<IconButton onClick={handleClick} style={{ color: "black" }}>
+				<IconButton onClick={handleClick}>
 					<MenuIcon />
 				</IconButton>
+				<StyledMenu
+					id='customized-menu'
+					anchorEl={anchorEl}
+					keepMounted
+					open={Boolean(anchorEl)}
+					onClose={handleClose}
+				>
+					<div className='Navbar__Links'>
+						<ul className='Navbar__ul'>
+							<li className='Navbar__Link'>
+								<Link smooth={true} duration={1000} to='header'>
+									Home
+								</Link>
+							</li>
+							<li className='Navbar__Link'>
+								<Link smooth={true} duration={1000} to='AboutUs'>
+									About
+								</Link>
+							</li>
+							<li className='Navbar__Link'>
+								<Link smooth={true} duration={1000} to='skillSection'>
+									Skills
+								</Link>
+							</li>
+							<li className='Navbar__Link'>
+								<Link smooth={true} duration={1000} to='Experience'>
+									Experience
+								</Link>
+							</li>
+							<li className='Navbar__Link'>
+								<Link smooth={true} duration={1000} to='service'>
+									Service
+								</Link>
+							</li>
+							<li className='Navbar__Link'>
+								<Link smooth={true} duration={1000} to='contact'>
+									Contact
+								</Link>
+							</li>
+						</ul>
+					</div>
+				</StyledMenu>
 			</div>
 			{showul ? (
 				<div className='Navbar__Links'>
@@ -81,3 +171,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+{
+	/* <IconButton onClick={handleClickNavbar} style={{ color: "black" }}>
+					<MenuIcon />
+				</IconButton> */
+}
