@@ -31,20 +31,20 @@ const AboutUs = () => {
 				<div className='AboutUs__leftDiv'>
 					<div className='AboutUsLeftDiv__Content'>
 						<div className='card card1'>
-							<h2>1,000</h2>
-							<h4>Happy Clients</h4>
+							<h2>3.20</h2>
+							<h4>CGPA</h4>
 						</div>
 						<div className='card card2'>
-							<h2>1,000</h2>
-							<h4>Projects Done</h4>
-						</div>
-						<div className='card card3'>
 							<h2>Freshie</h2>
 							<h4>Work Experience</h4>
 						</div>
+						<div className='card card3'>
+							<h2>0,015</h2>
+							<h4>Projects Done</h4>
+						</div>
 						<div className='card card4'>
-							<h2>3.20</h2>
-							<h4>CGPA</h4>
+							<h2>0,004</h2>
+							<h4>Happy Clients</h4>
 						</div>
 					</div>
 				</div>
@@ -53,8 +53,8 @@ const AboutUs = () => {
 						<h3>About Me</h3>
 						<h2>A Fresh Grad Junior React Js Developer.</h2>
 						<p>
-							Far far away, behind the word mountains, far from the countries
-							lorem and lorem, there live the blind texts.
+							Intern level react js developer, with prior knowledge about npm,
+							node, express, and MongoDB. Deep knowledge about JavaScript.
 						</p>
 						<div className='AboutUsRightDivContent__Child'>
 							<div className='AboutUsRightDivContent__LeftChild'>

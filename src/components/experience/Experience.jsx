@@ -53,18 +53,49 @@ const Experience = () => {
 			>
 				<Grid item xs={12} sm={5} className='experience__child'>
 					<div className='experience__icon'>
+						<i class='fas fa-shuttle-van'></i>
+					</div>
+					<h4>2021-2021</h4>
+					<h2>Carvan - Drive the future</h2>
+					<div className='experience__locationIcon'>
+						<i class='fas fa-map-marker-alt'></i>
+						<p>National Incubation Center, NED University, Karachi.</p>
+					</div>
+					<p>
+						Carvan a startup that focuses month-to-month car service for an
+						employee, staff, or school kids, I worked here as an application
+						manager the application was MEAN Stack/ Angular based.
+					</p>
+				</Grid>
+				<Grid item xs={12} sm={5} className='experience__child'>
+					<div className='experience__icon'>
+						<i class='fas fa-laptop-house'></i>
+					</div>
+					<h4>2020-2021</h4>
+					<h2>ezTech Solutions</h2>
+					<div className='experience__locationIcon'>
+						<i class='fas fa-map-marker-alt'></i>
+						<p>P.E.C.H.S ,Karachi.</p>
+					</div>
+					<p>
+						ezTech Solutions was my first job as a simple Web developer where I
+						was appointed to develop modern and efficient websites using basic
+						HTML, CSS and JavaScript, no frameworks no libraries.
+					</p>
+				</Grid>
+				<Grid item xs={12} sm={5} className='experience__child'>
+					<div className='experience__icon'>
 						<i class='fas fa-user-graduate'></i>
 					</div>
-					<h4>2014-2015</h4>
-					<h2>Master Degree of Design</h2>
+					<h4>2017-2021</h4>
+					<h2>Grad Degree of Computer Scientist</h2>
 					<div className='experience__locationIcon'>
 						<i class='fas fa-map-marker-alt'></i>
 						<p> Muhammad Ali Jinnah University</p>
 					</div>
 					<p>
-						A small river named Duden flows by their place and supplies it with
-						the necessary regelialia. It is a paradisematic country, in which
-						roasted parts of sentences fly into your mouth.
+						Muhammad Ali Jinnah University, one of the finest universities in
+						Karachi. Cleared my graduation lifetime with a good CGPA of 3.2.
 					</p>
 				</Grid>
 				<Grid item xs={12} sm={5} className='experience__child'>
@@ -72,48 +103,12 @@ const Experience = () => {
 						<i class='fas fa-user-graduate'></i>
 					</div>
 					<h4>2014-2015</h4>
-					<h2>Master Degree of Design</h2>
+					<h2>Inremediate Certification</h2>
 					<div className='experience__locationIcon'>
 						<i class='fas fa-map-marker-alt'></i>
-						<p> Muhammad Ali Jinnah University</p>
+						<p>BufferZone Degree College</p>
 					</div>
-					<p>
-						A small river named Duden flows by their place and supplies it with
-						the necessary regelialia. It is a paradisematic country, in which
-						roasted parts of sentences fly into your mouth.
-					</p>
-				</Grid>
-				<Grid item xs={12} sm={5} className='experience__child'>
-					<div className='experience__icon'>
-						<i class='fas fa-user-graduate'></i>
-					</div>
-					<h4>2014-2015</h4>
-					<h2>Master Degree of Design</h2>
-					<div className='experience__locationIcon'>
-						<i class='fas fa-map-marker-alt'></i>
-						<p> Muhammad Ali Jinnah University</p>
-					</div>
-					<p>
-						A small river named Duden flows by their place and supplies it with
-						the necessary regelialia. It is a paradisematic country, in which
-						roasted parts of sentences fly into your mouth.
-					</p>
-				</Grid>
-				<Grid item xs={12} sm={5} className='experience__child'>
-					<div className='experience__icon'>
-						<i class='fas fa-user-graduate'></i>
-					</div>
-					<h4>2014-2015</h4>
-					<h2>Master Degree of Design</h2>
-					<div className='experience__locationIcon'>
-						<i class='fas fa-map-marker-alt'></i>
-						<p> Muhammad Ali Jinnah University</p>
-					</div>
-					<p>
-						A small river named Duden flows by their place and supplies it with
-						the necessary regelialia. It is a paradisematic country, in which
-						roasted parts of sentences fly into your mouth.
-					</p>
+					<p>Cleared my HSC I and II with a good percentage of 68%.</p>
 				</Grid>
 			</Grid>
 		</div>

@@ -9,22 +9,22 @@ import { Link } from "react-scroll";
 
 const data = [
 	{
-		iconClass: "fab fa-chrome",
+		iconClass: "fas fa-palette",
 		title: "UI/UX Design",
 		description:
-			"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+			"I can build a good UI with the best UX that entertains the user and their comfort using Photoshop PSD.",
 	},
 	{
-		iconClass: "fas fa-palette",
+		iconClass: "fab fa-chrome",
 		title: "Web Development",
 		description:
-			"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+			"I can build SPA, multi-page websites, or anything according to your need that would be completely responsive. Tech stack would be React js as frontend.",
 	},
 	{
-		iconClass: "fab fa-artstation",
-		title: "UI/UX Design",
+		iconClass: "fas fa-ellipsis-h",
+		title: "More To Come",
 		description:
-			"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+			"By the time more services would be added till then happy searching.",
 	},
 ];
 const Services = () => {

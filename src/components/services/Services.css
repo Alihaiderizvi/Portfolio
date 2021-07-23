@@ -79,13 +79,22 @@
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 15px;
+	text-transform: uppercase;
 }
 
 .Service__text {
 	background: #d5c455;
 	color: #fff;
 	font-weight: 500;
-	padding: 1rem;
+	padding: 0 1rem;
+	height: 11rem;
+}
+
+.Service__text > p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
 }
 
 /* Service On Hover */
