@@ -21,7 +21,7 @@ const AboutUs = () => {
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						About Us
+						About Me
 						<KeyboardArrowRightIcon />
 					</p>
 				</div>

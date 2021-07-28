@@ -9,17 +9,8 @@ import "./Navbar.css";
 // Import: React Sroll
 import { Link } from "react-scroll";
 
-// Material icons
-import MoreVertIcon from "@material-ui/icons/MoreVert";
-import PersonIcon from "@material-ui/icons/Person";
-import FormatListBulletedRoundedIcon from "@material-ui/icons/FormatListBulletedRounded";
-import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-
 // Material Ui Core
-import { ListItemIcon } from "@material-ui/core";
 import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
 
 // Material Ui Style
 import { withStyles } from "@material-ui/styles";
@@ -43,8 +34,6 @@ const StyledMenu = withStyles({
 		{...props}
 	/>
 ));
-
-const StyledMenuItem = MenuItem;
 
 const Navbar = () => {
 	// Menu
@@ -171,9 +160,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-	/* <IconButton onClick={handleClickNavbar} style={{ color: "black" }}>
-					<MenuIcon />
-				</IconButton> */
-}

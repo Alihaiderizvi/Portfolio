@@ -40,7 +40,7 @@ const Services = () => {
 					</p>
 					<p>
 						<Link to='AboutUs' smooth={true} duration={1000}>
-							AboutUs
+							About Me
 						</Link>
 						<KeyboardArrowRightIcon />
 					</p>

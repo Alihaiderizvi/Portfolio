@@ -24,7 +24,7 @@ const Contact = () => {
 					</p>
 					<p>
 						<Link to='AboutUs' smooth={true} duration={1000}>
-							AboutUs
+							About Me
 						</Link>
 						<KeyboardArrowRightIcon />
 					</p>
@@ -47,11 +47,11 @@ const Contact = () => {
 						<KeyboardArrowRightIcon />
 					</p>
 					<p>
-						Contact Us
+						Contact Me
 						<KeyboardArrowRightIcon />
 					</p>
 				</div>
-				<h1>Contact Us </h1>
+				<h1>Contact Me </h1>
 			</div>
 			<section className='Contact__Section'>
 				<div className='Contact__form'>
